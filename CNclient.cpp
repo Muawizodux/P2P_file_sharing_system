@@ -103,27 +103,6 @@ void file_download(int connfd) {
 	out_file.close();
 }
 
-//
-//void peer_out(int connfd) {
-//	// for sending message to the other client
-//	while (1) {
-//		string message;
-//		getline(cin, message);
-//		send(connfd, message.c_str(), message.length(), 0);
-//
-//		cout << "Message to peer: " << message << endl;
-//		if (!strcmp(message.c_str(), "e")) break;
-//	}
-//}
-//void peer_in(int connfd) {
-//	// for recieving message from the other client
-//	while (1) {
-//		char buffer[100] = {};
-//		recv(connfd, buffer, 100, 0);
-//		buffer[99] = '\0';
-//		cout << "Message from peer: " << buffer << endl;
-//	}
-//}
 void peer_out(int connfd) {
 	// for sending message to the other client
 	while (1) {
